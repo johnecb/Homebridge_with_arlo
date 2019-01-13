@@ -3,7 +3,7 @@ RUN npm install -g --unsafe-perm homebridge
 RUN timeout 10s homebridge || :
 RUN touch /root/.homebridge/config.json
 RUN npm install -g --unsafe-perm homebridge-config-ui-x
-RUN mpn install -g --unsafe-perm homebridge-camera-ffmpeg
+RUN npm install -g --unsafe-perm homebridge-camera-ffmpeg
 RUN apt-get update --fix-missing
 RUN apt-get -y install ffmpeg
 RUN apt-get -y install wget git
